@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">CountryExplorer</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Explore Countries Around the World</h1>
+            <p>Discover detailed information about any country including population, capital, and weather</p>
+            
+           
+            <div class="search-container">
+                <input type="text" id="country-search" placeholder="Search for a country...">
+                <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="results">
+        <div class="container">
+            <h2>Search Results</h2>
+            <div id="country-results" class="country-grid">
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-content">
+                <!-- Detailed content will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CountryExplorer</h3>
+                    <p>Your gateway to global information.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>2210883@iub.edu.bd</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CountryExplorer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
